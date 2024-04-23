@@ -4,7 +4,7 @@
 
 body
 {
-  background-image: url("/pic1.jpeg");
+  background-image: url("/pic3.jpeg");
 }
 
 
@@ -87,4 +87,5 @@ a {
   @include defaultStyle;
   padding: 5rem 2rem;
   background-color: $color4;
+  //border:5px solid white
 }

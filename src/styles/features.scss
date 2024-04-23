@@ -45,13 +45,14 @@ $shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 100%;
 }
 
-@mixin container($maxW: 1200px, $h: 100vh, $p: 5vmax, $m: auto) {
+@mixin container($maxW: 1200px, $h: 100vh, $p: 5vmax, $m: auto,$w:100%) {
   //background-image: url("../../public/pic2.jpeg");
   margin: $m;
   max-width: $maxW;
   width: 100%;
   height: $h;
   padding: $p;
+  width: $w;
 }
 
 @mixin myButton($w: 10rem, $p: 0.5rem, $bgColor: $color3, $color: $color2) {

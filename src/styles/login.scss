@@ -1,4 +1,5 @@
 .login > section {
+
   padding: 5rem 2rem;
     @include container(900px, unset, 2rem);
     min-height: 80%;
@@ -12,4 +13,11 @@
         @include myButton(18.75rem, 1rem);
       }
     }
+  }
+  .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+    margin-top: 5rem;
   }

@@ -1,5 +1,87 @@
 @media (max-width: 900px) {
-    .login {
-      padding: 0;
+  .login {
+    padding: 0;
+  }
+}
+
+@media (max-width: 685px) {
+  .header {
+    background-color: $color3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: 100%;
+
+    >div {
+
+      h2 {
+        text-transform: uppercase;
+        color: $color2;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    >article {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 0rem;
+      // >a{
+      //   color:white;
+
+      // }
+      >a {
+        @include styledText($size: 1rem, $spacing: 1px);
+        @include myButton($w: 70%);
+
+        
+      }
+      >button {
+        @include styledText($size: 1rem, $spacing: 1px);
+        @include myButton($w: 70%);
+      }
     }
   }
+}
+
+@media (max-width: 400px) {
+  .header {
+    background-color: $color3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem;
+    width: 100%;
+
+    >div {
+
+      h2 {
+        text-transform: uppercase;
+        color: $color2;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+
+    >article {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 0rem;
+      // >a{
+      //   color:white;
+
+      // }
+      >a {
+        @include styledText($size: 0.7rem, $spacing: 1px);
+        @include myButton($w: 70%);
+      }
+      >button {
+        @include styledText($size: 0.7rem, $spacing: 1px);
+        @include myButton($w: 70%);
+      }
+    }
+  }
+}
